@@ -30,8 +30,8 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 600px;
     border-radius: 20px;
     overflow: hidden;
     transition: width .05s, height .05s;
@@ -60,4 +60,53 @@ div#form > h1 {
 div#form > p {
     font-size: 0.8em;
     margin-bottom: 10px;
+}
+
+form > div.campo {
+    background-color: var(--lilas);
+    padding: 5px 0px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    border: 1px solid #183534;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type=submit]:hover {
+    background-color: #183534;
+    color: var(--verde);
+}
+
+form a.button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: #61ceca;
+    color:#183534;
+    border: 1px solid #183534;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+form a.button:hover {
+    background-color: #183534;
+    color: var(--verde);
+}
+
+form a.button span.material-icons {
+    font-size: 0.8em;
 }
